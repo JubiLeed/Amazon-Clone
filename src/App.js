@@ -13,6 +13,7 @@ function App() {
       <Router>
         <CartContextProvider>
           <NavBar />
+          <DisplayContent />
           <Routes>
             <Route path="/display" element={<DisplayContent />}></Route>
             <Route path="/order/:id" element={<PlaceOrder />}></Route>
